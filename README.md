@@ -33,7 +33,8 @@ dietpi-update
 ```
   
 #### dietpi.txt.
-````
+
+```
 # Включаем WiFi (строго 1)
 AUTO_SETUP_NET_WIFI_ENABLED=1
 # Отключаем Ethernet, чтобы не мешал
@@ -56,12 +57,14 @@ AUTO_SETUP_NET_WIFI_COUNTRY_CODE=RU
 
 
 ### Дисплей
-```
+
+``
 curl -L -o waveshare35a.dtbo https://raw.githubusercontent.com/waveshare/LCD-show/master/waveshare35a-overlay.dtb
-```    
+``    
 
     
 ### Правка руками конфига после установки
+
 ``
 rootfs/etc/wpa_supplicant/wpa_supplicant.conf.
 ``
