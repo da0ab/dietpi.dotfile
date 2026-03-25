@@ -120,5 +120,28 @@ sudo vim /etc/issue
 ```
     
     
- 
+### Настройка клавиатуры с синими зубами
 
+``
+bluetoothctl
+``
+
+```
+power on
+agent on
+default-agent
+scan on
+```
+
+``
+ [NEW] Device F3:92:68:84:E1:3E ServicesResolved: yes
+``
+
+```
+pair F3:92:68:84:E1:3E
+trust F3:92:68:84:E1:3E 
+connect F3:92:68:84:E1:3E
+scan off
+devices
+exit
+```
